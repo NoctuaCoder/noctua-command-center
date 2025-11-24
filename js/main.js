@@ -2,11 +2,13 @@
 import { initPomodoro } from './pomodoro.js';
 import { initTerminal } from './terminal.js';
 import { initConstellations } from './constellations.js';
+import { initWeather } from './weather.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     initClock();
     initConstellations();
     initPomodoro();
+    initWeather();
     initTerminal();
     initSnakeModal();
 });

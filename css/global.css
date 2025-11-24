@@ -84,15 +84,22 @@ body {
     grid-column: 3 / 4;
 }
 
-.snake-panel {
+.weather-panel {
     grid-column: 4 / 5;
 }
 
 .terminal-panel {
-    grid-column: 1 / -1;
-    /* Full width bottom or adjust as needed */
-    margin-top: var(--gap-md);
+    grid-column: 1 / 4;
+    margin-top: 0;
     height: 300px;
+}
+
+.snake-panel {
+    grid-column: 4 / 5;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Responsive Adjustments */
@@ -109,8 +116,18 @@ body {
         grid-column: 1 / 2;
     }
 
-    .snake-panel {
+    .weather-panel {
         grid-column: 2 / 3;
+    }
+
+    .terminal-panel {
+        grid-column: 1 / -1;
+    }
+
+    .snake-panel {
+        grid-column: 1 / -1;
+        height: auto;
+        padding: 20px;
     }
 }
 
@@ -126,6 +143,7 @@ body {
     }
 
     .pomodoro-panel,
+    .weather-panel,
     .snake-panel {
         grid-column: 1 / -1;
     }
