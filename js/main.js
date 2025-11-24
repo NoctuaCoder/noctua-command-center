@@ -3,12 +3,14 @@ import { initPomodoro } from './pomodoro.js';
 import { initTerminal } from './terminal.js';
 import { initConstellations } from './constellations.js';
 import { initWeather } from './weather.js';
+import { initPlayer } from './player.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     initClock();
     initConstellations();
     initPomodoro();
     initWeather();
+    initPlayer();
     initTerminal();
     initSnakeModal();
 });
@@ -53,10 +55,8 @@ function initSnakeModal() {
     const close = document.querySelector('.close-modal');
     const frame = document.getElementById('snakeFrame');
 
-    // Path to the existing snake game
-    // Assuming it's hosted or accessible relative to this file
-    // For local dev, we might need to adjust this path
-    const snakeGamePath = '../matrix-owl/snake.html';
+    // Path to the Snake game (now included in the repository)
+    const snakeGamePath = 'snake.html';
 
     btn.addEventListener('click', () => {
         frame.src = snakeGamePath;

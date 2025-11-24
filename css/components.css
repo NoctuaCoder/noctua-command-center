@@ -304,3 +304,87 @@ button {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-5px); }
 }
+
+/* Sonic Player */
+.player-visualizer {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+    height: 60px;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.bar {
+    width: 8px;
+    height: 10%;
+    background: var(--accent-purple);
+    border-radius: 4px;
+    transition: height 0.1s ease;
+}
+
+.player-info {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.track-title {
+    font-weight: 700;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.track-artist {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.player-controls {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.ctrl-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.ctrl-btn:hover {
+    background: var(--accent-cyan);
+    color: black;
+    transform: scale(1.1);
+}
+
+.ctrl-btn.play {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    background: var(--accent-purple);
+}
+
+.progress-container {
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(to right, var(--accent-cyan), var(--accent-purple));
+    transition: width 0.1s linear;
+}
