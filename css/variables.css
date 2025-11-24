@@ -1,0 +1,29 @@
+:root {
+    /* Colors - Noctua Celestial Palette */
+    --bg-deep: #05070a;
+    --bg-radial-start: #0f172a;
+    --bg-radial-end: #000000;
+    
+    --accent-cyan: #00f3ff;
+    --accent-purple: #bd00ff;
+    --accent-blue: #0066ff;
+    
+    --text-main: #ffffff;
+    --text-muted: #94a3b8;
+    
+    --glass-bg: rgba(15, 23, 42, 0.6);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-highlight: rgba(255, 255, 255, 0.05);
+    
+    /* Fonts */
+    --font-main: 'Outfit', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    
+    /* Spacing & Radius */
+    --radius-lg: 24px;
+    --radius-md: 16px;
+    --radius-sm: 8px;
+    
+    --gap-md: 20px;
+    --gap-lg: 32px;
+}
