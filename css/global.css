@@ -16,8 +16,8 @@ body {
     align-items: center;
 }
 
-/* Animated Background Stars Container */
-.stars-container {
+/* Canvas Background */
+#starCanvas {
     position: fixed;
     top: 0;
     left: 0;
@@ -25,7 +25,7 @@ body {
     height: 100%;
     z-index: -1;
     pointer-events: none;
-    overflow: hidden;
+    /* Let clicks pass through to interactive elements, but we handle mousemove on window */
 }
 
 /* Star Animation Classes (will be added by JS) */
