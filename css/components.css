@@ -373,6 +373,11 @@ button {
 }
 
 /* Sonic Player */
+.player-header {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
 .player-visualizer {
     display: flex;
     align-items: flex-end;

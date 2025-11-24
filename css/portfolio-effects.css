@@ -1,9 +1,5 @@
 /* Portfolio-Style Visual Effects */
 
-* {
-    cursor: none !important;
-}
-
 /* Noise Texture Overlay */
 .noise {
     position: fixed;
