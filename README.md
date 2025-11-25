@@ -8,7 +8,7 @@
 
 **A stunning celestial-themed productivity dashboard with interactive constellations**
 
-[✨ Features](#-features) • [🚀 Quick Start](#-quick-start) • [📸 Screenshots](#-screenshots) • [🎮 Usage](#-usage)
+[🌐 Live Demo](https://noctuacoder.github.io/noctua-command-center/) • [✨ Features](#-features) • [🚀 Quick Start](#-quick-start) • [📸 Screenshots](#-screenshots) • [🎮 Usage](#-usage)
 
 </div>
 
