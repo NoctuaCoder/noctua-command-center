@@ -12,7 +12,17 @@
 
 </div>
 
----
+<br/>
+
+<div align="center">
+<pre style="color: #00BFFF; font-size: 8px; line-height: 1.2; opacity: 0.6;">
+    ✦       ✦       ✦       ✦       ✦       ✦       ✦
+      ·   ·   ·   ·   ·   ·   ·   ·   ·   ·   ·
+    ✦       ✦       ✦       ✦       ✦       ✦       ✦
+</pre>
+</div>
+
+<br/>
 
 ## 🌟 Overview
 
@@ -268,7 +278,17 @@ MIT License - feel free to use this project for personal or commercial purposes!
 
 If you like this project, please give it a ⭐ on GitHub!
 
----
+<br/>
+
+<div align="center">
+<pre style="color: #00BFFF; font-size: 8px; line-height: 1.2; opacity: 0.6;">
+    ✦       ✦       ✦       ✦       ✦       ✦       ✦
+      ·   ·   ·   ·   ·   ·   ·   ·   ·   ·   ·
+    ✦       ✦       ✦       ✦       ✦       ✦       ✦
+</pre>
+</div>
+
+<br/>
 
 <div align="center">
 
