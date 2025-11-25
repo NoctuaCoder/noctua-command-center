@@ -14,24 +14,24 @@ export function initTerminal() {
         projects: "Active Projects: Noctua Command Center, Matrix Owl, Stellar Dots",
         snake: "Launching Snake Game...",
         echo: (args) => args.join(' '),
-        about: "Noctua Command Center v1.0 - A celestial productivity dashboard\nMade with 💜 by NoctuaCoder",
-        theme: "Current theme: Celestial Dark 🌌\nColors: Cyan (#00f3ff), Purple (#bd00ff), Blue (#0066ff)",
-        weather: "Check the Atmosphere widget for current weather! 🌦️",
+        about: "Noctua Command Center v1.0 - A celestial productivity dashboard\nMade by NoctuaCoder",
+        theme: "Current theme: Celestial Dark\nColors: Cyan (#00f3ff), Purple (#bd00ff), Blue (#0066ff)",
+        weather: "Check the Weather widget for current weather!",
         ls: "index.html  css/  js/  README.md  snake.html  favicon.png",
         cat: (args) => {
             if (args[0] === 'README.md') return "# Noctua Command Center\nA stunning celestial-themed productivity dashboard";
             return `cat: ${args[0] || 'file'}: No such file or directory`;
         },
         neofetch: `
-╔═══════════════════════════════════╗
-║   🦉 Noctua Command Center       ║
-║   ─────────────────────────       ║
-║   OS: Noctua OS v1.0             ║
-║   Shell: NoctuaShell             ║
-║   Theme: Celestial Dark          ║
-║   Uptime: ${Math.floor(performance.now() / 1000)}s              ║
-║   User: Alana                    ║
-╚═══════════════════════════════════╝`
+╭───────────────────────────────────╮
+│   Noctua Command Center       │
+│   ───────────────────────       │
+│   OS: Noctua OS v1.0             │
+│   Shell: NoctuaShell             │
+│   Theme: Celestial Dark          │
+│   Uptime: ${Math.floor(performance.now() / 1000)}s              │
+│   User: Alana                    │
+╰───────────────────────────────────╯`
     };
 
     function printLine(text, type = 'output') {

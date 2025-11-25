@@ -42,16 +42,16 @@ export function initWeather() {
         // 71, 73, 75: Snow
         // 95, 96, 99: Thunderstorm
 
-        if (code === 0) return { desc: 'Clear Sky', icon: isDay ? '☀️' : '🌙' };
-        if (code >= 1 && code <= 3) return { desc: 'Partly Cloudy', icon: isDay ? '⛅' : '☁️' };
-        if (code >= 45 && code <= 48) return { desc: 'Foggy', icon: '🌫️' };
-        if (code >= 51 && code <= 55) return { desc: 'Drizzle', icon: '🌦️' };
-        if (code >= 61 && code <= 67) return { desc: 'Rain', icon: '🌧️' };
-        if (code >= 71 && code <= 77) return { desc: 'Snow', icon: '❄️' };
-        if (code >= 80 && code <= 82) return { desc: 'Showers', icon: '🌧️' };
+        if (code === 0) return { desc: 'Clear Sky', icon: isDay ? '☀' : '☾' };
+        if (code >= 1 && code <= 3) return { desc: 'Partly Cloudy', icon: isDay ? '⛅' : '☁' };
+        if (code >= 45 && code <= 48) return { desc: 'Foggy', icon: '≈' };
+        if (code >= 51 && code <= 55) return { desc: 'Drizzle', icon: '•' };
+        if (code >= 61 && code <= 67) return { desc: 'Rain', icon: '▼' };
+        if (code >= 71 && code <= 77) return { desc: 'Snow', icon: '✱' };
+        if (code >= 80 && code <= 82) return { desc: 'Showers', icon: '▼' };
         if (code >= 95 && code <= 99) return { desc: 'Thunderstorm', icon: '⚡' };
 
-        return { desc: 'Unknown', icon: '🌡️' };
+        return { desc: 'Unknown', icon: '--' };
     }
 
     if (navigator.geolocation) {
