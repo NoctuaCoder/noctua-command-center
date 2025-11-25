@@ -15,8 +15,8 @@
 .glass-panel:hover {
     background: var(--card-hover);
     transform: translateY(-5px);
-    border-color: var(--accent-cyan);
-    box-shadow: 0 20px 40px rgba(0, 255, 255, 0.1);
+    border-color: var(--cosmic-purple);
+    box-shadow: 0 20px 40px rgba(147, 51, 234, 0.3);
 }
 
 /* Typography & Headers */
@@ -46,8 +46,11 @@ h2 {
     font-size: 24px;
     font-weight: 700;
     letter-spacing: -0.5px;
-    color: var(--accent-cyan);
-    text-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    background: var(--nebula-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 0 20px rgba(147, 51, 234, 0.5));
 }
 
 .status {
@@ -63,9 +66,9 @@ h2 {
 .status-dot {
     width: 8px;
     height: 8px;
-    background-color: var(--accent-cyan);
+    background-color: #10b981;
     border-radius: 50%;
-    box-shadow: 0 0 10px var(--accent-cyan);
+    box-shadow: 0 0 10px #10b981;
     animation: pulse 2s infinite;
 }
 
@@ -85,8 +88,11 @@ h2 {
     font-family: var(--font-mono);
     font-size: 3rem;
     font-weight: 700;
-    color: var(--accent-cyan);
-    text-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    background: var(--nebula-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 0 20px rgba(147, 51, 234, 0.5));
 }
 
 .date-display {
@@ -131,8 +137,9 @@ h2 {
 
 .link-card:hover {
     background: rgba(255, 255, 255, 0.08);
-    border-color: var(--accent-cyan);
+    border-color: var(--cosmic-purple);
     transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(147, 51, 234, 0.3);
 }
 
 .link-card .icon {
@@ -175,13 +182,13 @@ button {
 }
 
 .btn-primary {
-    background: var(--accent-blue);
+    background: var(--nebula-gradient);
     color: white;
 }
 
 .btn-primary:hover {
-    background: #2563eb;
-    box-shadow: 0 0 15px rgba(37, 99, 235, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(147, 51, 234, 0.6);
 }
 
 .btn-secondary {
@@ -195,17 +202,17 @@ button {
 
 .btn-glow {
     background: transparent;
-    border: 1px solid var(--accent-purple);
-    color: var(--accent-purple);
-    box-shadow: 0 0 10px rgba(189, 0, 255, 0.2);
+    border: 1px solid var(--cosmic-purple);
+    color: var(--cosmic-purple);
+    box-shadow: 0 0 10px rgba(147, 51, 234, 0.3);
     width: 100%;
     padding: 15px;
 }
 
 .btn-glow:hover {
-    background: var(--accent-purple);
+    background: var(--nebula-gradient);
     color: white;
-    box-shadow: 0 0 20px rgba(189, 0, 255, 0.6);
+    box-shadow: 0 0 20px rgba(147, 51, 234, 0.6);
 }
 
 /* Terminal Widget */
@@ -345,7 +352,10 @@ button {
     font-family: var(--font-mono);
     font-size: 2rem;
     font-weight: 700;
-    color: var(--accent-cyan);
+    background: var(--nebula-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .weather-desc {
@@ -391,7 +401,7 @@ button {
 .bar {
     width: 8px;
     height: 10%;
-    background: var(--accent-purple);
+    background: var(--nebula-gradient);
     border-radius: 4px;
     transition: height 0.1s ease;
 }
@@ -434,16 +444,17 @@ button {
 }
 
 .ctrl-btn:hover {
-    background: var(--accent-cyan);
-    color: black;
+    background: var(--cosmic-purple);
+    color: white;
     transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(147, 51, 234, 0.5);
 }
 
 .ctrl-btn.play {
     width: 50px;
     height: 50px;
     font-size: 1.5rem;
-    background: var(--accent-purple);
+    background: var(--nebula-gradient);
 }
 
 .progress-container {
@@ -457,7 +468,7 @@ button {
 .progress-bar {
     width: 0%;
     height: 100%;
-    background: linear-gradient(to right, var(--accent-cyan), var(--accent-purple));
+    background: var(--nebula-gradient);
     transition: width 0.1s linear;
 }
 
@@ -481,15 +492,19 @@ button {
 
 .crypto-item:hover {
     background: rgba(255, 255, 255, 0.06);
-    border-color: var(--accent-cyan);
+    border-color: var(--cosmic-purple);
     transform: translateX(5px);
+    box-shadow: 0 0 15px rgba(147, 51, 234, 0.3);
 }
 
 .crypto-icon {
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--accent-cyan);
-    text-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+    background: var(--nebula-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 0 15px rgba(147, 51, 234, 0.5));
     min-width: 50px;
     text-align: center;
 }

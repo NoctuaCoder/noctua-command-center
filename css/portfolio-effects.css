@@ -38,7 +38,7 @@
     left: -10%;
     width: 50vw;
     height: 50vw;
-    background: var(--accent-blue-2);
+    background: var(--cosmic-purple);
     animation-delay: 0s;
 }
 
@@ -47,7 +47,7 @@
     right: -10%;
     width: 60vw;
     height: 60vw;
-    background: var(--accent-cyan);
+    background: var(--cosmic-pink);
     animation-delay: -5s;
 }
 
@@ -56,7 +56,7 @@
     left: 40%;
     width: 40vw;
     height: 40vw;
-    background: var(--accent-blue-1);
+    background: var(--cosmic-blue);
     animation-delay: -10s;
     opacity: 0.2;
 }
@@ -92,8 +92,8 @@
 .star-4p::after {
     content: '';
     position: absolute;
-    background: linear-gradient(45deg, #ffffff, var(--accent-cyan));
-    box-shadow: 0 0 8px var(--accent-cyan), 0 0 15px var(--accent-blue-1);
+    background: linear-gradient(45deg, #ffffff, var(--cosmic-purple));
+    box-shadow: 0 0 8px var(--cosmic-purple), 0 0 15px var(--cosmic-pink);
 }
 
 .star-4p::before {
@@ -153,19 +153,19 @@
 .cursor-dot {
     width: 8px;
     height: 8px;
-    background-color: var(--accent-cyan);
-    box-shadow: 0 0 10px var(--accent-cyan);
+    background-color: var(--cosmic-purple);
+    box-shadow: 0 0 10px var(--cosmic-purple);
 }
 
 .cursor-outline {
     width: 40px;
     height: 40px;
-    border: 1px solid rgba(0, 255, 255, 0.3);
+    border: 1px solid rgba(147, 51, 234, 0.3);
     transition: width 0.2s, height 0.2s, background-color 0.2s;
 }
 
 body:hover .cursor-outline {
     width: 50px;
     height: 50px;
-    background-color: rgba(0, 255, 255, 0.03);
+    background-color: rgba(147, 51, 234, 0.03);
 }

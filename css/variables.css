@@ -1,34 +1,44 @@
 :root {
-    /* Colors - Portfolio Celestial Palette */
-    --bg: #02040a;
-    /* Darker Blue-Black */
-    --bg-radial-start: #0a1628;
-    --bg-radial-end: #000000;
-    
-    --accent-cyan: #00FFFF;
-    /* Electric Cyan */
-    --accent-blue-1: #00BFFF;
-    /* Deep Sky Blue */
-    --accent-blue-2: #1E90FF;
-    /* Dodger Blue */
-    
-    --text-main: #ffffff;
-    --text-muted: #a0b0c0;
-    
-    --card-bg: rgba(255, 255, 255, 0.03);
-    --card-border: rgba(0, 255, 255, 0.1);
-    --card-hover: rgba(0, 255, 255, 0.08);
-    
+    /* Celestial Dark Space Colors */
+    --bg: #0a0a0f;
+    --bg-radial-start: #1a1a2e;
+    --bg-radial-end: #0a0a0f;
+
+    /* Cosmic Gradients */
+    --cosmic-purple: #9333ea;
+    --cosmic-pink: #ec4899;
+    --cosmic-blue: #3b82f6;
+    --cosmic-cyan: #06b6d4;
+
+    /* Accent Colors */
+    --accent-cyan: var(--cosmic-cyan);
+    --accent-blue-1: var(--cosmic-blue);
+    --accent-blue-2: var(--cosmic-purple);
+
+    /* Nebula Gradient */
+    --nebula-gradient: linear-gradient(135deg, #9333ea 0%, #ec4899 50%, #3b82f6 100%);
+    --cosmic-glow: linear-gradient(135deg, rgba(147, 51, 234, 0.3), rgba(236, 72, 153, 0.3));
+
+    /* Text */
+    --text-main: #e5e7eb;
+    --text-muted: #9ca3af;
+    --text-dark: #6b7280;
+
+    /* Glass */
+    --card-bg: rgba(30, 30, 40, 0.7);
+    --card-border: rgba(255, 255, 255, 0.1);
+    --card-hover: rgba(255, 255, 255, 0.1);
+
     /* Fonts */
     --font-main: 'Inter', sans-serif;
     --font-serif: 'Playfair Display', serif;
     --font-mono: 'JetBrains Mono', monospace;
-    
+
     /* Spacing & Radius */
     --radius-lg: 24px;
     --radius-md: 16px;
     --radius-sm: 8px;
-    
+
     --gap-md: 20px;
     --gap-lg: 32px;
 }
