@@ -72,7 +72,7 @@ This project showcases **enterprise-level Frontend development skills** through 
 
 #### 🌦️ Atmosphere (Weather Widget)
 - Real-time weather using Open-Meteo API
-- Geolocation support with fallback to São Paulo
+- Geolocation support with automatic fallback
 - Temperature, conditions, and location display
 - Animated weather icons
 

@@ -61,10 +61,10 @@ export function initWeather() {
             },
             (error) => {
                 console.warn('Geolocation denied/error, using default.', error);
-                getWeather(defaultLat, defaultLon, 'São Paulo');
+                getWeather(defaultLat, defaultLon, 'Default Location');
             }
         );
     } else {
-        getWeather(defaultLat, defaultLon, 'São Paulo');
+        getWeather(defaultLat, defaultLon, 'Default Location');
     }
 }
