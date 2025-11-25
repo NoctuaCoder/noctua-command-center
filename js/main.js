@@ -4,12 +4,14 @@ import { initTerminal } from './terminal.js';
 import { initConstellations } from './constellations.js';
 import { initWeather } from './weather.js';
 import { initPlayer } from './player.js';
+import { initCrypto } from './crypto.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     initClock();
     initConstellations();
     initPomodoro();
     initWeather();
+    initCrypto();
     initPlayer();
     initTerminal();
     initSnakeModal();
