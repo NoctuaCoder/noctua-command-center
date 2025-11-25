@@ -221,6 +221,7 @@ MIT License - feel free to use this project for personal or commercial purposes!
 
 **Alana (NoctuaCoder)**
 - GitHub: [@NoctuaCoder](https://github.com/NoctuaCoder)
+- 🌐 Portfolio: [noctuacoder.github.io](https://noctuacoder.github.io/NoctuaCoder/portfolio.html)
 
 ## 🙏 Credits
 
