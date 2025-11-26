@@ -24,21 +24,31 @@
 
 <br/>
 
-## 🌟 Overview
+# Noctua Command Center
 
-**Noctua Command Center** is a beautiful, feature-rich personal dashboard that combines productivity tools with an immersive celestial aesthetic. Built with vanilla JavaScript and modern CSS, it features interactive constellation backgrounds, glassmorphism UI, and a suite of useful widgets.
+![Noctua Command Center](screenshots/dashboard-saas.png)
 
-Perfect for developers, creatives, and anyone who wants a stunning homepage that's both functional and beautiful.
+## Overview
 
-## 💼 Why This Matters
+**Noctua Command Center** is a modern, premium **SaaS-style Dashboard** designed for high-performance monitoring and management. It features a sleek dark mode aesthetic, interactive data visualization, and a responsive layout.
 
-This project showcases **enterprise-level Frontend development skills** through real-world implementations:
+## Features
 
-### API Integration Expertise
-- **Real-time Weather Data**: Integration with Open-Meteo API for live weather updates
-- **Cryptocurrency Prices**: CoinGecko API for Bitcoin and Ethereum market data
-- **Error Handling**: Graceful fallbacks and offline support
-- **Data Transformation**: Processing and displaying external API responses
+- **Premium Dark UI**: Ultra-dark theme with glassmorphism accents.
+- **Interactive Charts**: Animated bar charts and donut charts for data visualization.
+- **Real-time Stats**: Key metrics display (Revenue, Orders, Visitors) with trend indicators.
+- **Data Management**: Detailed order list with status filtering.
+- **Responsive Design**: Fully adaptive layout for all screen sizes.
+
+## Tech Stack
+
+- **HTML5**: Semantic structure.
+- **CSS3**: Custom variables, Grid/Flexbox layout, animations.
+- **JavaScript**: Dynamic chart rendering and data handling.
+
+## Live Demo
+
+[View Live Dashboard](https://noctuacoder.github.io/noctua-command-center/)
 
 ### Production-Ready Architecture
 - **Modular ES6 Design**: Clean separation of concerns with dedicated modules for each feature
