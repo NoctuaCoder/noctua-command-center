@@ -9,17 +9,25 @@
     --border-color: #27272a;
 
     /* Accents */
-    --accent-blue: #3b82f6;
-    --accent-purple: #a855f7;
-    --accent-orange: #f97316;
-    --accent-green: #22c55e;
-    --accent-red: #ef4444;
+    /* Celestial Accents */
+    --accent-blue: #00BFFF;
+    /* Deep Sky Blue */
+    --accent-purple: #BD00FF;
+    /* Electric Purple */
+    --accent-orange: #FF9900;
+    /* Sunset Orange */
+    --accent-green: #00FF99;
+    /* Neon Green */
+    --accent-pink: #FF00FF;
+    /* Magenta */
+    --accent-cyan: #00FFFF;
+    /* Cyan */
 
     /* Spacing */
     --sidebar-width: 80px;
     --sidebar-width-expanded: 240px;
     --header-height: 70px;
-    --card-radius: 16px;
+    --card-radius: 20px;
 }
 
 * {
@@ -54,14 +62,15 @@ body {
 .logo {
     width: 40px;
     height: 40px;
-    background: linear-gradient(135deg, var(--text-primary), var(--text-secondary));
+    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
     border-radius: 12px;
     margin-bottom: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    color: #000;
+    color: #fff;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
 }
 
 .nav-menu {
@@ -81,18 +90,20 @@ body {
     justify-content: center;
     color: var(--text-secondary);
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all 0.3s;
 }
 
 .nav-item:hover,
 .nav-item.active {
-    background-color: var(--bg-card-hover);
-    color: var(--text-primary);
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--accent-cyan);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
 }
 
 .nav-item.active {
-    background-color: var(--text-primary);
-    color: #000;
+    background: linear-gradient(135deg, rgba(0, 255, 255, 0.1), rgba(189, 0, 255, 0.1));
+    color: var(--accent-cyan);
+    border: 1px solid rgba(0, 255, 255, 0.2);
 }
 
 .sidebar-footer {
@@ -131,6 +142,12 @@ body {
     gap: 0.5rem;
     width: 300px;
     color: var(--text-secondary);
+    transition: all 0.3s;
+}
+
+.search-bar:focus-within {
+    border-color: var(--accent-purple);
+    box-shadow: 0 0 15px rgba(189, 0, 255, 0.1);
 }
 
 .search-bar input {
@@ -167,13 +184,21 @@ body {
     border: 1px solid var(--border-color);
     cursor: pointer;
     color: var(--text-secondary);
+    transition: all 0.3s;
+}
+
+.icon-btn:hover {
+    border-color: var(--accent-cyan);
+    color: var(--accent-cyan);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
 }
 
 .user-avatar {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: var(--accent-blue);
+    background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue));
+    padding: 2px;
     overflow: hidden;
 }
 
@@ -181,6 +206,8 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--bg-body);
 }
 
 /* Dashboard Grid */
@@ -191,7 +218,7 @@ body {
     gap: 1.5rem;
 }
 
-/* Cards */
+/* Cards & Celestial Glow */
 .card {
     background-color: var(--bg-card);
     border-radius: var(--card-radius);
@@ -201,6 +228,66 @@ body {
     justify-content: space-between;
     position: relative;
     overflow: hidden;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px var(--card-glow, rgba(255, 255, 255, 0.1));
+    border-color: var(--card-glow, rgba(255, 255, 255, 0.1));
+}
+
+/* The Celestial Bottom Glow - Enhanced */
+.card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, var(--card-glow, transparent), transparent);
+    opacity: 0.7;
+    filter: blur(20px);
+    transition: opacity 0.3s ease, height 0.3s ease, filter 0.3s ease;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.card:hover::after {
+    opacity: 0.9;
+    height: 60%;
+    filter: blur(25px);
+}
+
+.card-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Card Glow Variants */
+.glow-purple {
+    --card-glow: var(--accent-purple);
+}
+
+.glow-blue {
+    --card-glow: var(--accent-blue);
+}
+
+.glow-green {
+    --card-glow: var(--accent-green);
+}
+
+.glow-orange {
+    --card-glow: var(--accent-orange);
+}
+
+.glow-cyan {
+    --card-glow: var(--accent-cyan);
+}
+
+.glow-pink {
+    --card-glow: var(--accent-pink);
 }
 
 .card-header {
